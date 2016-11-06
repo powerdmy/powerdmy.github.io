@@ -1,174 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Head tag -->
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="正在学习前端中,该博客记录我的成长">
-    <meta name="keyword" content="undefined">
-    <meta name="theme-color" content="#600090">
-    <meta name="msapplication-navbutton-color" content="#600090">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
-    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
-    <link rel="alternate" type="application/atom+xml" title="DMY的博客" href="/atom.xml">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
-    <title>
-        
-        javascript个人笔记｜undefined
-        
-    </title>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>javascript个人笔记 | DMY的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="javascript核心
+核心(ECMAScript)
+文档对象模型（DOM）
+浏览器对象模型(BOM)
 
-    <link rel="canonical" href="http://yoursite.com/2016/11/05/javascriptNote/">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+ECMAScript介绍ECMAScript 是一种开放的、国际上广为接受的脚本语言规范。 它本身并不是一种脚本语言。ECMAScript与Web浏览器没有依赖关系，ECMA定义的只是这门语言的基础，在此基础上可以构建更完善的脚本语言（JavaScript），Web浏览器只是ECMA的宿主">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript个人笔记">
+<meta property="og:url" content="http://yoursite.com/2016/11/05/javascriptNote/index.html">
+<meta property="og:site_name" content="DMY的博客">
+<meta property="og:description" content="javascript核心
+核心(ECMAScript)
+文档对象模型（DOM）
+浏览器对象模型(BOM)
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/blog-style.css">
 
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
+ECMAScript介绍ECMAScript 是一种开放的、国际上广为接受的脚本语言规范。 它本身并不是一种脚本语言。ECMAScript与Web浏览器没有依赖关系，ECMA定义的只是这门语言的基础，在此基础上可以构建更完善的脚本语言（JavaScript），Web浏览器只是ECMA的宿主">
+<meta property="og:image" content="http://img1.ph.126.net/1-IBl-_3BaA9yDkh77kiAQ==/3364751871701058040.jpg">
+<meta property="og:image" content="http://img2.ph.126.net/Yudtdb2ONAUfwiChFZBuwA==/2777313595221835346.jpg">
+<meta property="og:updated_time" content="2016-11-06T01:14:15.676Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript个人笔记">
+<meta name="twitter:description" content="javascript核心
+核心(ECMAScript)
+文档对象模型（DOM）
+浏览器对象模型(BOM)
+
+
+ECMAScript介绍ECMAScript 是一种开放的、国际上广为接受的脚本语言规范。 它本身并不是一种脚本语言。ECMAScript与Web浏览器没有依赖关系，ECMA定义的只是这门语言的基础，在此基础上可以构建更完善的脚本语言（JavaScript），Web浏览器只是ECMA的宿主">
+<meta name="twitter:image" content="http://img1.ph.126.net/1-IBl-_3BaA9yDkh77kiAQ==/3364751871701058040.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="DMY的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/assets/img/favicon.ico">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
 </head>
 
-<style>
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/assets/img/dmy.png" class="js-avatar">
+			
+		</a>
 
-    header.intro-header {
-        background-image: url('undefined')
-    }
-</style>
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="" class="animated fadeIn">
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
-" data-ishome = "false" >
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand animated pulse" href="/">
-                <span class="brand-logo">
-                    DMY的博客
-                </span>
-                's Blog
-            </a>
-        </div>
+		<hgroup>
+		  <h1 class="header-author"><a href="/">DMY</a></h1>
+		</hgroup>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- Known Issue, found by Hux:
-            <nav>'s height woule be hold on by its content.
-            so, when navbar scale out, the <nav> will cover tags.
-            also mask any touch event of tags, unfortunately.
-        -->
-        <!-- /.navbar-collapse -->
-        <div id="huxblog_navbar">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-					
-                    
-					
-					
-                </ul>
-            </div>
-        </div>
+		
+		<p class="header-subtitle">大家好好学习，天天向上</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/photos">相册</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/powerdmy" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/dmyyy" title="weibo">weibo</a>
+		        
+					<a class="mail" target="_blank" href="/dengmmyy@163.com" title="mail">mail</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
     </div>
-    <!-- /.container -->
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">DMY</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/assets/img/dmy.png" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">DMY</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">大家好好学习，天天向上</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/photos">相册</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/powerdmy" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/dmyyy" title="weibo">weibo</a>
+			        
+						<a class="mail" target="_blank" href="/dengmmyy@163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
 </nav>
-<script>
-    // Drop Bootstarp low-performance Navbar
-    // Use customize navbar with high-quality material design animation
-    // in high-perf jank-free CSS3 implementation
-//    var $body   = document.body;
-    var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
-    var $collapse = document.querySelector('.navbar-collapse');
 
-    $toggle.addEventListener('click', handleMagic)
-    function handleMagic(e){
-        if ($navbar.className.indexOf('in') > 0) {
-        // CLOSE
-            $navbar.className = " ";
-            // wait until animation end.
-            setTimeout(function(){
-                // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        }else{
-        // OPEN
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-        }
-    }
-</script>
-
-<!-- Main Content -->
-
-<!--only post-->
-
-
-<img class="wechat-title-img"
-     src="">
-
-
-<style>
+      <div class="body-wrap">
+        <article id="post-javascriptNote" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    header.intro-header {
-        background-image: url('')
-    }
-
+      <input type="hidden" class="isFancy" />
     
-</style>
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript个人笔记
+    </h1>
+  
 
-<header class="intro-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <div class="post-heading">
-                    <h1>javascript个人笔记</h1>
-                    
-                    <span class="meta">
-                         作者 DMY
-                        <span>
-                          日期 2016-11-05
-                         </span>
-                    </span>
-                    <div class="tags text-center">
-                        
-                        <a class="tag" href="/tags/#javascript"
-                           title="javascript">javascript</a>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="post-title-haojen">
-        <span>
-            javascript个人笔记
-        </span>
-    </div>
-</header>
-
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <!-- Post Container -->
-            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h4 id="javascript核心"><a href="#javascript核心" class="headerlink" title="javascript核心"></a>javascript核心</h4><ol>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="javascript核心"><a href="#javascript核心" class="headerlink" title="javascript核心"></a>javascript核心</h4><ol>
 <li>核心(ECMAScript)</li>
 <li>文档对象模型（DOM）</li>
 <li>浏览器对象模型(BOM)</li>
@@ -486,154 +495,225 @@
 <p>阻止事件冒泡<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">    &lt;input type=&quot;button&quot; value=&quot;Click Me&quot; id=&quot;myBtn&quot; /&gt;</div><div class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">        var btn = document.getElementById(&quot;myBtn&quot;);</div><div class="line">        btn.onclick = function(event)&#123;</div><div class="line">            alert(&quot;Clicked&quot;);</div><div class="line">            event.stopPropagation();//添加阻止事件冒泡后事件不能冒泡到body，因此不会触发下面一个事件</div><div class="line">        &#125;;</div><div class="line">        </div><div class="line">        document.body.onclick = function(event)&#123;</div><div class="line">            alert(&quot;Body clicked&quot;);</div><div class="line">        &#125;;</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure></p>
 <p>利用事件冒泡实现事件委托，有效减少事件处理程序的数量，使整个页面占用内存更小，提升整体性能<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">    &lt;ul id=&quot;myLinks&quot;&gt;</div><div class="line">        &lt;li id=&quot;goSomewhere&quot;&gt;Go somewhere&lt;/li&gt;</div><div class="line">        &lt;li id=&quot;doSomething&quot;&gt;Do something&lt;/li&gt;</div><div class="line">        &lt;li id=&quot;sayHi&quot;&gt;Say hi&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    (function()&#123;</div><div class="line">        var list = document.getElementById(&quot;myLinks&quot;);</div><div class="line">        </div><div class="line">        EventUtil.addHandler(list, &quot;click&quot;, function(event)&#123;</div><div class="line">            event = EventUtil.getEvent(event);</div><div class="line">            var target = EventUtil.getTarget(event);</div><div class="line">        </div><div class="line">            switch(target.id)&#123;</div><div class="line">                case &quot;doSomething&quot;:</div><div class="line">                    document.title = &quot;I changed the document&apos;s title&quot;;</div><div class="line">                    break;</div><div class="line">        </div><div class="line">                case &quot;goSomewhere&quot;:</div><div class="line">                    location.href = &quot;http://www.wrox.com&quot;;</div><div class="line">                    break;</div><div class="line">        </div><div class="line">                case &quot;sayHi&quot;:</div><div class="line">                    alert(&quot;hi&quot;);</div><div class="line">                    break;</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line"></div><div class="line">    &#125;)();</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure></p>
 
-                <hr>
-                
-
-                <ul class="pager">
-                    
-                    
-                    <li class="next">
-                        <a href="/2016/11/05/第一篇博客/" data-toggle="tooltip" data-placement="top"
-                           title="第一篇博客">Next Post &rarr;</a>
-                    </li>
-                    
-                </ul>
-
-                
-
-                
-
-            </div>
-
-            <div class="hidden-xs col-sm-3 toc-col">
-                <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript核心"><span class="toc-text">javascript核心</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ECMAScript介绍"><span class="toc-text">ECMAScript介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建html页面"><span class="toc-text">创建html页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#javascript语法"><span class="toc-text">javascript语法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#时间和日期对象"><span class="toc-text">时间和日期对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正则表达式"><span class="toc-text">正则表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量，作用域和内存"><span class="toc-text">变量，作用域和内存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本包装类型"><span class="toc-text">基本包装类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象与原型"><span class="toc-text">面向对象与原型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#匿名函数与闭包"><span class="toc-text">匿名函数与闭包</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#可以利用闭包来创建特权方法来访问这些私有变量"><span class="toc-text">可以利用闭包来创建特权方法来访问这些私有变量</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BOM"><span class="toc-text">BOM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件"><span class="toc-text">事件</span></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Sidebar Container -->
-
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                
-
-                <!-- Friends Blog -->
-                
-            </div>
-        </div>
-
+      
     </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/05/javascriptNote/" class="archive-article-date">
+  	<time datetime="2016-11-05T15:37:40.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-05</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
 </article>
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/05/第一篇博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">第一篇博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
-<!-- Footer -->
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <br>
-                <ul class="list-inline text-center">
-                
-                
-                
 
-                
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="javascriptNote" data-title="javascript个人笔记" data-url="http://yoursite.com/2016/11/05/javascriptNote/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"litten-hexo"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
-                
 
-                
 
-                
 
-                </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; DMY的博客 2016
-                    <br>
-                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
-                    <br>
-                    Theme by <a href="https://haojen.github.io/">Haojen Ma</a>
-                </p>
 
-            </div>
-        </div>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 DMY
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
     </div>
+  </div>
 </footer>
-
-<!-- jQuery -->
-<script src="/js/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="/js/bootstrap.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="/js/blog.js"></script>
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: true,
+		root: "/",
+		innerArchive: true
+	}
 </script>
 
-<!-- jquery.tagcloud.js -->
-<script>
-    // only load tagcloud.js in tag.html
-    if($('#tag_cloud').length !== 0){
-        async("http://yoursite.com/js/jquery.tagcloud.js",function(){
-            $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
-</script>
-
-<!--fastClick.js -->
-<script>
-    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
-        var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
-    })
-</script>
-
-<!-- Google Analytics -->
+<script src="/./main.js"></script>
 
 
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
 
-<!-- Baidu Tongji -->
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/javascript/" style="font-size: 10px;">javascript</a>
+    			</div>
+    	</section>
+    
 
+    
 
-<!-- swiftype -->
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">dmy，&lt;br&gt;2017年毕业，目前大四&lt;br&gt;&lt;br&gt;目前正在学习前端&lt;br/&gt;目前是一枚前端工程师&lt;br/&gt;&lt;br/&gt;该博客将记录我的成长</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-  _st('install','undefined','2.0.0');
-</script>
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
 
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
 
-<!--wechat title img-->
-<img class="wechat-title-img" src="undefined">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
 </body>
-
 </html>
