@@ -6,17 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>DMY的博客</title>
+  <title>CSS三栏式布局的实现 | DMY的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="正在学习前端中,该博客记录我的成长">
-<meta property="og:type" content="website">
-<meta property="og:title" content="DMY的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="三栏布局是指左右边栏固定宽度，中间栏填满其余空间的布局
+##1. 利用绝对定位特点：左右两栏采用绝对定位抽离文档流，分别固定于页面的左右两侧，中间栏用左右margin值撑开可以容纳左右边栏的距离。
+##2.利用左右两侧浮动不占据文档流左栏左浮动，右栏右浮动，中间栏左右margin值等于左右栏宽度。html中，中间栏要放在左右边栏的后边。道理上和绝对定位差不多，就是不占文档流了其他元素就填充上了，只">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS三栏式布局的实现">
+<meta property="og:url" content="http://yoursite.com/2016/11/06/CSS三栏式布局的实现/index.html">
 <meta property="og:site_name" content="DMY的博客">
-<meta property="og:description" content="正在学习前端中,该博客记录我的成长">
+<meta property="og:description" content="三栏布局是指左右边栏固定宽度，中间栏填满其余空间的布局
+##1. 利用绝对定位特点：左右两栏采用绝对定位抽离文档流，分别固定于页面的左右两侧，中间栏用左右margin值撑开可以容纳左右边栏的距离。
+##2.利用左右两侧浮动不占据文档流左栏左浮动，右栏右浮动，中间栏左右margin值等于左右栏宽度。html中，中间栏要放在左右边栏的后边。道理上和绝对定位差不多，就是不占文档流了其他元素就填充上了，只">
+<meta property="og:updated_time" content="2016-11-06T08:41:10.306Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DMY的博客">
-<meta name="twitter:description" content="正在学习前端中,该博客记录我的成长">
+<meta name="twitter:title" content="CSS三栏式布局的实现">
+<meta name="twitter:description" content="三栏布局是指左右边栏固定宽度，中间栏填满其余空间的布局
+##1. 利用绝对定位特点：左右两栏采用绝对定位抽离文档流，分别固定于页面的左右两侧，中间栏用左右margin值撑开可以容纳左右边栏的距离。
+##2.利用左右两侧浮动不占据文档流左栏左浮动，右栏右浮动，中间栏左右margin值等于左右栏宽度。html中，中间栏要放在左右边栏的后边。道理上和绝对定位差不多，就是不占文档流了其他元素就填充上了，只">
   
     <link rel="alternative" href="/atom.xml" title="DMY的博客" type="application/atom+xml">
   
@@ -137,9 +144,7 @@
 </nav>
 
       <div class="body-wrap">
-        
-  
-    <article id="post-CSS三栏式布局的实现" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-CSS三栏式布局的实现" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -148,8 +153,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/06/CSS三栏式布局的实现/">CSS三栏式布局的实现</a>
+    <h1 class="article-title" itemprop="name">
+      CSS三栏式布局的实现
     </h1>
   
 
@@ -184,76 +189,64 @@
   </div>
 </article>
 
-
-
-
-
-
-
-
-
-
   
-    <article id="post-javascriptNote" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/05/javascriptNote/">javascript个人笔记</a>
-    </h1>
   
+    <a href="/2016/11/05/javascriptNote/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">javascript个人笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="javascript核心"><a href="#javascript核心" class="headerlink" title="javascript核心"></a>javascript核心</h4><ol>
-<li>核心(ECMAScript)</li>
-<li>文档对象模型（DOM）</li>
-<li>浏览器对象模型(BOM)</li>
-</ol>
-<hr>
-<h4 id="ECMAScript介绍"><a href="#ECMAScript介绍" class="headerlink" title="ECMAScript介绍"></a>ECMAScript介绍</h4><p>ECMAScript 是一种开放的、国际上广为接受的脚本语言规范。 它本身并不是一种脚本语言。<br>ECMAScript与Web浏览器没有依赖关系，ECMA定义的只是这门语言的基础，在此基础上可以构建更完善的脚本语言（JavaScript），Web浏览器只是ECMA的宿主环境之一。</p>
-<hr>
-        <p class="article-more-link">
-          <a class="article-more-a"  href="/2016/11/05/javascriptNote/#more">more >></a>
-        </p>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/05/javascriptNote/" class="archive-article-date">
-  	<time datetime="2016-11-05T15:37:40.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-05</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
 
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="CSS三栏式布局的实现" data-title="CSS三栏式布局的实现" data-url="http://yoursite.com/2016/11/06/CSS三栏式布局的实现/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"litten-hexo"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
-
-  
-  
 
 
       </div>
@@ -275,8 +268,8 @@
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
