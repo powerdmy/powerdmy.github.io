@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JS," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,16 +84,18 @@
 
 
 
-<meta name="description" content="排序算法">
+<meta name="description" content="常用获取方式有js和jquery两种">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常见的js算法归纳">
-<meta property="og:url" content="http://yoursite.com/2016/11/22/常见的js算法归纳/index.html">
+<meta property="og:title" content="获取浏览器和屏幕各种高度宽度">
+<meta property="og:url" content="http://yoursite.com/2016/11/27/获取浏览器和屏幕各种高度宽度/index.html">
 <meta property="og:site_name" content="DMY的博客">
-<meta property="og:description" content="排序算法">
-<meta property="og:updated_time" content="2016-11-22T04:25:24.861Z">
+<meta property="og:description" content="常用获取方式有js和jquery两种">
+<meta property="og:image" content="http://pic002.cnblogs.com/images/2012/367527/2012102917382526.gif">
+<meta property="og:updated_time" content="2016-11-27T03:11:43.660Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="常见的js算法归纳">
-<meta name="twitter:description" content="排序算法">
+<meta name="twitter:title" content="获取浏览器和屏幕各种高度宽度">
+<meta name="twitter:description" content="常用获取方式有js和jquery两种">
+<meta name="twitter:image" content="http://pic002.cnblogs.com/images/2012/367527/2012102917382526.gif">
 
 
 
@@ -121,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/22/常见的js算法归纳/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/11/27/获取浏览器和屏幕各种高度宽度/"/>
 
 
 
 
 
-  <title> 常见的js算法归纳 | DMY的博客 </title>
+  <title> 获取浏览器和屏幕各种高度宽度 | DMY的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -258,7 +260,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/22/常见的js算法归纳/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/27/获取浏览器和屏幕各种高度宽度/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="DMY">
@@ -282,7 +284,7 @@
             
             
               
-                常见的js算法归纳
+                获取浏览器和屏幕各种高度宽度
               
             
           </h1>
@@ -295,8 +297,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-22T11:44:15+08:00">
-                2016-11-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-27T11:05:34+08:00">
+                2016-11-27
               </time>
             
 
@@ -305,24 +307,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端开发/" itemprop="url" rel="index">
-                    <span itemprop="name">前端开发</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -349,9 +333,13 @@
       
 
       
-        <h4 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h4><a id="more"></a>
-<p>1.选择排序<br>选择排序就是每次从待排序的数组scanArr(scanArr从原数组(arr)第二项开始到数组结尾)中，选择一个最小(或者最大)的数字，放在前面(与待排序数组的前一个数字交换位置，即和第一项arr[0]交换数值)，然后到下一次循环，scanArr向前移动一位(scanArr变成从arr[2]开始)，重复刚刚的操作，直到scanArr的起点移动到最后一项,排序结束。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">selectorSort</span>(<span class="params">arr</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> max;</div><div class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.length<span class="number">-1</span>;i++)&#123;</div><div class="line">       max=i;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j=i+<span class="number">1</span>;j&lt;arr.length;j++)&#123;<span class="comment">//遍历待排序数组scanArr</span></div><div class="line">       <span class="keyword">if</span>(arr[max]&lt;arr[j])&#123;<span class="comment">//选择scanArr中最大的数的数组下标</span></div><div class="line">          max=j;</div><div class="line">       &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">//和待排序数组前一个数字交换位置</span></div><div class="line">     <span class="keyword">var</span> temp=arr[max];</div><div class="line">     arr[max]=arr[i];</div><div class="line">     arr[i]=temp;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <p>常用获取方式有js和jquery两种<br><a id="more"></a></p>
+<p>####Javascript:</p>
+<blockquote>
+<p>图片源自网络<br><img src="http://pic002.cnblogs.com/images/2012/367527/2012102917382526.gif"></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">alert(<span class="built_in">document</span>.body.clientWidth);        <span class="comment">//网页可见区域宽(body)</span></div><div class="line"></div><div class="line">alert(<span class="built_in">document</span>.body.clientHeight);       <span class="comment">//网页可见区域高(body)</span></div><div class="line"></div><div class="line">alert(<span class="built_in">document</span>.body.offsetWidth);       <span class="comment">//网页可见区域宽(body)，包括border、margin等</span></div><div class="line"></div><div class="line">alert(<span class="built_in">document</span>.body.offsetHeight);      <span class="comment">//网页可见区域宽(body)，包括border、margin等</span></div><div class="line"></div><div class="line">alert(<span class="built_in">document</span>.body.scrollWidth);        <span class="comment">//网页正文全文宽，包括有滚动条时的未见区域</span></div><div class="line"></div><div class="line">alert(<span class="built_in">document</span>.body.scrollHeight);       <span class="comment">//网页正文全文高，包括有滚动条时的未见区域</span></div><div class="line"></div><div class="line">alert(<span class="built_in">document</span>.body.scrollTop);           <span class="comment">//网页被卷去的Top(滚动条)</span></div><div class="line"></div><div class="line">alert(<span class="built_in">document</span>.body.scrollLeft);           <span class="comment">//网页被卷去的Left(滚动条)</span></div><div class="line"></div><div class="line">alert(<span class="built_in">window</span>.screenTop);                     <span class="comment">//浏览器距离Top</span></div><div class="line"></div><div class="line">alert(<span class="built_in">window</span>.screenLeft);                     <span class="comment">//浏览器距离Left</span></div><div class="line"></div><div class="line">alert(<span class="built_in">window</span>.screen.height);                <span class="comment">//屏幕分辨率的高</span></div><div class="line"></div><div class="line">alert(<span class="built_in">window</span>.screen.width);                 <span class="comment">//屏幕分辨率的宽</span></div><div class="line"></div><div class="line">alert(<span class="built_in">window</span>.screen.availHeight);          <span class="comment">//屏幕可用工作区的高</span></div><div class="line"></div><div class="line">alert(<span class="built_in">window</span>.screen.availWidth);           <span class="comment">//屏幕可用工作区的宽</span></div></pre></td></tr></table></figure>
+<p>####Jquery:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">alert($(<span class="built_in">window</span>).height());                           <span class="comment">//浏览器当前窗口可视区域高度</span></div><div class="line"></div><div class="line">alert($(<span class="built_in">document</span>).height());                        <span class="comment">//浏览器当前窗口文档的高度</span></div><div class="line"></div><div class="line">alert($(<span class="built_in">document</span>.body).height());                <span class="comment">//浏览器当前窗口文档body的高度</span></div><div class="line"></div><div class="line">alert($(<span class="built_in">document</span>.body).outerHeight(<span class="literal">true</span>));  <span class="comment">//浏览器当前窗口文档body的总高度 包括border padding margin</span></div><div class="line"></div><div class="line">alert($(<span class="built_in">window</span>).width());                            <span class="comment">//浏览器当前窗口可视区域宽度</span></div><div class="line"></div><div class="line">alert($(<span class="built_in">document</span>).width());                        <span class="comment">//浏览器当前窗口文档对象宽度</span></div><div class="line"></div><div class="line">alert($(<span class="built_in">document</span>.body).width());                <span class="comment">//浏览器当前窗口文档body的宽度</span></div><div class="line"></div><div class="line">alert($(<span class="built_in">document</span>.body).outerWidth(<span class="literal">true</span>));  <span class="comment">//浏览器当前窗口文档body的总宽度 包括border</span></div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -373,19 +361,13 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/JS/" rel="tag"># JS</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/21/第一个vue小Demo/" rel="next" title="第一个vue小Demo">
-                <i class="fa fa-chevron-left"></i> 第一个vue小Demo
+              <a href="/2016/11/22/常见的js算法归纳/" rel="next" title="常见的js算法归纳">
+                <i class="fa fa-chevron-left"></i> 常见的js算法归纳
               </a>
             
           </div>
@@ -393,10 +375,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/27/获取浏览器和屏幕各种高度宽度/" rel="prev" title="获取浏览器和屏幕各种高度宽度">
-                获取浏览器和屏幕各种高度宽度 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -443,17 +421,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/headpic.jpg"
@@ -517,22 +486,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#排序算法"><span class="nav-number">1.</span> <span class="nav-text">排序算法</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
     </div>
